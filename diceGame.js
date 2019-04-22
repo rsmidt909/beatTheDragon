@@ -16,23 +16,69 @@ let roll = Math.floor(Math.random() * numOfSides)+1;
 return roll;
 }
 
+let gameContinue = true;
+let playerBaseAttack = 2;
+let playerBaseHealth = 2;
+let dragonBaseAttack = 5;
+let dragonBaseHealth = 5;
 
-let playerBaseAttack = 2
+function playerHealthNA (playerBaseHealth){
+    let totalPlayerHealth = pickPlayerHealth()*playerBaseHealth
+    return totalPlayerHealth;
+}
 
-
+function playerHealthTotal (playerBaseHealth){
+    let totalPlayerHealth = pickArmor()*(pickPlayerHealth()*playerBaseHealth)
+    return totalPlayerHealth;
+}
 
 function playerAttackOWep (playerBaseAttack){
     let totalPlayerAttack = pickWeapon()*playerBaseAttack
-    return totalPlayerAttack
+    return totalPlayerAttack;
 }
 
 function playerAttackTotal (playerBaseAttack){
     let totalPlayerAttack = pickPlayerAttack()*(pickWeapon()*playerBaseAttack)
-    return totalPlayerAttack
+    return totalPlayerAttack;
 }
 
+function dragonAttackTotal (dragonBaseAttack){
+    let totalDragonAttack = pickDragonsAttack()*dragonBaseAttack
+    return totalDragonAttack;
+}
 
+function dragonHealthTotal (dragonBaseHealth){
+    let totalDragonHealth = pickDragHealth()*dragonBaseHealth
+    return totalDragonHealth;
+}
 
+function dragonAttackCheck(playerHealth,dragonAttack,gameContinue){
+    if(dragonAttack>=playerHealth){
+        gameContinue = false
+        return 'YOU DIED'
+    } else return 'You lived!';
+}
+
+function playerAttackCheck(playerAttack,dragonHealth,gameContinue){
+    if (playerAttack>=dragonHealth){
+        gameContinue = false
+        return 'You beat the dragon!'
+    } else { gameContinue = false
+        return 'You didnt beat the Dragon, and he ate you!!!'}
+}
+
+function masterFunc(){
+       let playerHealth = playerHealthNA(playerBaseHealth);
+       playerHealth = playerHealthTotal(playerBaseHealth);
+       let playerAttack = playerAttackOWep(playerBaseAttack);
+       playerAttack = playerAttackTotal(playerBaseAttack);
+       //maybe affinity here
+       //maybe type of dragon here
+       let dragonHealth = dragonHealthTotal(dragonBaseHealth);
+       let dragonAttack = dragonAttackTotal(dragonBaseAttack);
+       dragonAttackCheck(playerHealth,dragonAttack,gameContinue);
+       playerAttackCheck(playerAttack,dragonHealth,gameContinue);
+}
 
 
 function pickWeapon (){
