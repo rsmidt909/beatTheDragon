@@ -28,7 +28,7 @@ let dragonBaseHealth = 5;
 
 
 
-masterFunc();
+
 
 let numOfSides=''
 
