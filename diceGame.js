@@ -15,6 +15,22 @@ let dragonBaseAttack = 5;
 let dragonBaseHealth = 5;
 
 
+
+/*let playerBox = document.getElementById("playerBox");
+let ctx = playerBox.getContext("2d");
+ctx.fillStyle = "red";
+ctx.fillRect(0, 0, 750, 500);
+ctx.globalAlpha = 0.1;
+*/
+
+
+
+
+
+
+
+
+
 masterFunc();
 
 let numOfSides=''

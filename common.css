@@ -1,0 +1,46 @@
+.button{
+padding: 0%;
+text-align: center;
+position: fixed;
+bottom: 0%;
+margin: 30px;
+border: solid 5px;
+}
+
+#playerBox{
+    border-width: 10px;
+    border-style: outset;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-color: #990000;
+    background: red;
+    opacity: 0.6;
+}
+
+#dragonBox{
+    border-width: 10px;
+    border-style: outset;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-color: #990000;
+    background: red;
+    opacity: 0.6;
+}
+
+body{
+    background-image:url('images/background2.gif');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.vs{
+    text-align: center;
+    position: relative;
+    top: 25%;
+    right: 5%;
+}
