@@ -16,11 +16,7 @@ let dragonBaseHealth = 5;
 
 
 
-let playerBox = document.getElementById("playerBox");
-let ctx = playerBox.getContext("2d");
-ctx.fillText('Player Attack',10,450);
-ctx.font = sans-serif;
-ctx.fillText('Player Health',15,150);
+
 
 
 
@@ -99,11 +95,14 @@ function masterFunc(){
        playerHealth = playerHealthTotal(playerHealth);
        let playerAttack = playerAttackOWep();
        playerAttack = playerAttackTotal(playerAttack);
-    
        //maybe affinity here
        //maybe type of dragon here
+       document.getElementById("totalAttack").innerHTML = "Total Attack " + playerAttack;
+       document.getElementById("totalHealth").innerHTML = "Total Health " + playerHealth;
        let dragonHealth = dragonHealthTotal(dragonBaseHealth);
        let dragonAttack = dragonAttackTotal(dragonBaseAttack);
+       document.getElementById("totalDragAttack").innerHTML = "Total Attack " + dragonAttack;
+       document.getElementById("totalDragHealth").innerHTML = "Total Health " + dragonHealth;
        dragonAttackCheck(playerHealth,dragonAttack,gameContinue);
        if(gameContinue === false){
            return;
@@ -177,35 +176,35 @@ function pickDragHealth(){
   let dragHealth
     switch(diceRoll(8)){
         case 1:
-        console.log('The Dragons health resembles a dying animal + 3')
+        document.getElementById("dragHealth").innerHTML ='The Dragons health resembles a dying animal + 3';
         dragHealth = 1;
         break;
         case 2:
-        console.log('Youre not sure how the Dragon got this far considering its health + 2')
+        document.getElementById("dragHealth").innerHTML ='Youre not sure how the Dragon got this far considering its health + 2';
         dragHealth = 2;
         break;
         case 3:
-        console.log('This Dragon uses the handicapped automatic doors + 3')
+        document.getElementById("dragHealth").innerHTML ='This Dragon uses the handicapped automatic doors + 3';
         dragHealth = 3;
         break;
         case 4:
-        console.log('This Dragon uses the treadmill sometimes + 4')
+        document.getElementById("dragHealth").innerHTML ='This Dragon uses the treadmill sometimes + 4';
         dragHealth = 4;
         break;
         case 5:
-        console.log('This Dragon drinks protein for a snack + 5')
+        document.getElementById("dragHealth").innerHTML ='This Dragon drinks protein for a snack + 5';
         dragHealth = 5;
         break;
         case 6:
-        console.log('This Dragon Lifts. + 6')
+        document.getElementById("dragHealth").innerHTML ='This Dragon Lifts. + 6';
         dragHealth = 6;
         break;
         case 7:
-        console.log('This Dragon took your lunch money in another life. + 7')
+        document.getElementById("dragHealth").innerHTML ='This Dragon took your lunch money in another life. + 7';
         dragHealth = 7;
         break;
         case 8:
-        console.log('This Dragon eats Dragons. + 8')
+        document.getElementById("dragHealth").innerHTML ='This Dragon eats Dragons. + 8';
         dragHealth = 8;
         break;
         default: dragHealth = 0;
@@ -270,51 +269,51 @@ function pickDragonsAttack(){
     let dragAttack;
     switch(diceRoll(12)){
         case 1:
-        console.log('Was that a spark? + 1')
+        document.getElementById("dragAttack").innerHTML ='Was that a spark? + 1';
         dragAttack = 1;
         break;
         case 2:
-        console.log('Was that a zippo? + 2')
+        document.getElementById("dragAttack").innerHTML ='Was that a zippo? + 2';
         dragAttack = 2;
         break;
         case 3:
-        console.log('Im pretty sure that was fire + 3')
+        document.getElementById("dragAttack").innerHTML ='Im pretty sure that was fire + 3';
         dragAttack = 3;
         break;
         case 4:
-        console.log('Fire kinda like a fireplace + 4')
+        document.getElementById("dragAttack").innerHTML ='Fire kinda like a fireplace + 4';
         dragAttack = 4;
         break;
         case 5:
-        console.log('Fire like the song /"drop it like its hot"/" + 5')
+        document.getElementById("dragAttack").innerHTML ='Fire like the song \"drop it like its hot\" + 5';
         dragAttack = 5;
         break;
         case 6:
-        console.log('You should take a step back, kind of fire + 6')
+        document.getElementById("dragAttack").innerHTML ='You should take a step back, kind of fire + 6';
         dragAttack = 6;
         break;
         case 7:
-        console.log('OUCH kind of fire + 7')
+        document.getElementById("dragAttack").innerHTML ='OUCH kind of fire + 7';
         dragAttack = 7;
         break;
         case 8:
-        console.log('Youre going to feel that tomorrow kind of fire + 8')
+        document.getElementById("dragAttack").innerHTML ='Youre going to feel that tomorrow kind of fire + 8';
         dragAttack = 8;
         break;
         case 9:
-        console.log('Get out of the room kind of fire + 9')
+        document.getElementById("dragAttack").innerHTML ='Get out of the room kind of fire + 9';
         dragAttack = 9;
         break;
         case 10:
-        console.log('Its so hot you can feel it through your moniter + 10')
+        document.getElementById("dragAttack").innerHTML ='Its so hot you can feel it through your moniter + 10';
         dragAttack = 10;
         break;
         case 11:
-        console.log('Hahahaha, dont touch that. You will die kind of fire. + 11')
+        document.getElementById("dragAttack").innerHTML ='Hahahaha, dont touch that. You will die kind of fire. + 11';
         dragAttack = 11;
         break;
         case 12:
-        console.log('Its too hot for Satan. + 12')
+        document.getElementById("dragAttack").innerHTML ='Its too hot for Satan. + 12';
         dragAttack = 12;
         break;
         default: dragAttack = 0;

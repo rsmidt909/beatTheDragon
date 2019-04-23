@@ -11,19 +11,21 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
             <link type = "text/css" rel = "stylesheet" href = "common.css">
-            <script src="diceGame.js"></script>
+           
         </head>
             <body>
                     <div class ="container">
                             <div class ="row">
                                 <div class ="col-md-4">
-                                    <canvas id="playerBox" width="300px" height="500px"></canvas>
+                                    <canvas id="playerBox" width="370px" height="500px"></canvas>
                                     <p id="wep"></p>
                                     <p id="armor"></p>
                                     <p id="pHealth"></p>
                                     <p id="playerAttack"></p>
-                                    <h3 id="totalAttack"></h3>
+                                    <h5 id="totalHealth"></h5>
+                                    <h5 id="totalAttack"></h5>
                                     </div>
+                                    
                                     <div class ="col-md-4">
                                         <div class = "vs">
                                             <img src ="images/vs.png" alt="vs image" title="vs">
@@ -33,14 +35,16 @@
                                         </div>
                                     </div>
                                             <div class ="col-md-4">
-                                               <canvas id="dragonBox" width="300px" height="500px"></canvas>
-                                               <h2 id="dragHealth"></h2>
-                                               <h2 id="dragAttack"></h2>
+                                               <canvas id="dragonBox" width="370px" height="500px"></canvas>
+                                               <h4 id="dragHealth"></h4>
+                                               <h4 id="dragAttack"></h4>
+                                               <h3 id="totalDragHealth"></h3>
+                                               <h3 id="totalDragAttack"></h3>
                                                 </div>
                                 
                             </div>
                     </div>
 
-
             </body>
+            <script src="diceGame.js"></script>
 </html>
