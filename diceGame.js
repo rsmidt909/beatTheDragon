@@ -74,17 +74,17 @@ function dragonHealthTotal (dragonBaseHealth){
 function dragonAttackCheck(playerHealth,dragonAttack){
     if(dragonAttack>=playerHealth){
         gameContinue = false
-        return console.log('YOU DIED')
-    } else return console.log('You lived!');
+        document.getElementById("lose").innerHTML ='YOU DIED';
+    } else document.getElementById("tWin").innerHTML ='You lived!';
 }
 
 function playerAttackCheck(playerAttack,dragonHealth){
     if ((gameContinue === true)&&
     (playerAttack>=dragonHealth)){
         gameContinue = false
-        return console.log('You beat the dragon!')
+        document.getElementById("win").innerHTML ='You beat the dragon!';
     } else { gameContinue = false
-        return console.log('You didnt beat the Dragon, and he ate you!!!')}
+        document.getElementById("dLose").innerHTML ='You didnt beat the Dragon, and he ate you!!!'};
 }
 
 
