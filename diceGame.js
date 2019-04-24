@@ -21,6 +21,9 @@ let roll = Math.floor(Math.random() * numOfSides)+1;
 return roll;
 }
 
+pickPlayer();
+
+
 function pickPlayer(){
     let player = document.getElementById('player');
     let img;
@@ -28,27 +31,27 @@ function pickPlayer(){
     switch(diceRoll(6)) {
         case 1:
         document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img = "images/zombie2.png"
         break;
         case 2:
         document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img = "images/pajamaSam.png"
         break; 
         case 3:
         document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break; 
         case 4:
         document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break; 
         case 5:
         document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break; 
         case 6:
         document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break;
         default: 0;
         break;}
@@ -62,27 +65,27 @@ function pickDragon(){
     switch(diceRoll(6)) {
         case 1:
         document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img 
         break;
         case 2:
         document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break; 
         case 3:
         document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break; 
         case 4:
         document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break; 
         case 5:
         document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break; 
         case 6:
         document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
-        img = ;
+        img
         break;
         default: 0;
         break;}
