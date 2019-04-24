@@ -14,28 +14,77 @@ let playerBaseHealth = 2;
 let dragonBaseAttack = 5;
 let dragonBaseHealth = 5;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let numOfSides=''
 
 function diceRoll(numOfSides){
 let roll = Math.floor(Math.random() * numOfSides)+1;
 return roll;
 }
+
+function pickPlayer(){
+    let player;
+    switch(diceRoll(6)) {
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break;
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break; 
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break; 
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break; 
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break; 
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break;
+        default: 0;
+        break;}
+        return player;
+}
+
+function pickDragon(){
+    let player;
+    switch(diceRoll(6)) {
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break;
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break; 
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break; 
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break; 
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break; 
+        case 1:
+        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        player = 1;
+        break;
+        default: 0;
+        break;}
+        return player;
+}
+
 
 
 
