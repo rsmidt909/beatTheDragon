@@ -94,7 +94,7 @@ h1{
     top: 5%
 }
 
-h6{
+h6,h2{
     text-align: center;
   position: relative;
   bottom: 100%;

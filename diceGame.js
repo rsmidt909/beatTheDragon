@@ -52,22 +52,22 @@ function pickDragon(){
     let img;
     switch(diceRoll(6)) {
         case 1:
-        img 
+        img = "images/beardedDragon2.png";
         break;
         case 2:
-        img
+        img = "images/tinyDragon2.png";
         break; 
         case 3:
-        img
+        img = "images/funkDragon2.png";
         break; 
         case 4:
-        img
+        img = "images/cheapDragon2.png";
         break; 
         case 5:
-        img
+        img = "images/spyro2.png";
         break; 
         case 6:
-        img
+        img = "images/nicolBolas2.png";
         break;
         default: 0;
         break;}
@@ -151,6 +151,7 @@ function masterFunc(){
 
 let buttonVar = document.getElementById("btn");
 buttonVar.addEventListener("click", pickPlayer);
+buttonVar.addEventListener("click", pickDragon);
 buttonVar.addEventListener("click", masterFunc);
 
 function pickWeapon (){
