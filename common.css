@@ -93,3 +93,9 @@ h1{
     font-size: 100px;
     top: 5%
 }
+
+h6{
+    text-align: center;
+  position: relative;
+  bottom: 100%;
+}

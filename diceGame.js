@@ -21,75 +21,57 @@ let roll = Math.floor(Math.random() * numOfSides)+1;
 return roll;
 }
 
-pickPlayer();
-
 
 function pickPlayer(){
-    let player = document.getElementById('player');
-    let img;
-    player.innerHTML = '<img src="'+ img + '"/>';
+    let img; 
     switch(diceRoll(6)) {
         case 1:
-        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img = "images/zombie2.png"
+        img = "images/zombie2.png";
         break;
         case 2:
-        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img = "images/pajamaSam.png"
+        img = "images/pajamaSam.png";
         break; 
         case 3:
-        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img
+        img = "images/mako2.png";
         break; 
         case 4:
-        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img
+        img = "images/scorpion2.gif";
         break; 
         case 5:
-        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img
+        img = "images/slime3.png";
         break; 
         case 6:
-        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
-        img
+        img = "images/dS2.png";
         break;
         default: 0;
         break;}
-        return img;
+        return document.getElementById('player').innerHTML ='<img src="'+ img + '"/>';
 }
 
 function pickDragon(){
-    let dragon = document.getElementById('dragon');
     let img;
-    dragon.innerHTML = '<img src="'+ img + '"/>';
     switch(diceRoll(6)) {
         case 1:
-        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
         img 
         break;
         case 2:
-        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
         img
         break; 
         case 3:
-        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
         img
         break; 
         case 4:
-        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
         img
         break; 
         case 5:
-        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
         img
         break; 
         case 6:
-        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
         img
         break;
         default: 0;
         break;}
-        return img;
+        return document.getElementById('dragon').innerHTML ='<img src="'+ img + '"/>';
 }
 
 
@@ -167,6 +149,9 @@ function masterFunc(){
 }}           gameContinue = true;
 };
 
+let buttonVar = document.getElementById("btn");
+buttonVar.addEventListener("click", pickPlayer);
+buttonVar.addEventListener("click", masterFunc);
 
 function pickWeapon (){
     let weapon;

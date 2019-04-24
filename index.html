@@ -17,6 +17,7 @@
                     <div class ="container">
                             <div class ="row">
                                 <div class ="col-md-4">
+                                        
                                     <canvas id="playerBox" width="370px" height="500px"></canvas>
                                     <p id="wep"></p>
                                     <p id="armor"></p>
@@ -24,6 +25,7 @@
                                     <p id="playerAttack"></p>
                                     <h5 id="totalHealth"></h5>
                                     <h5 id="totalAttack"></h5>
+                                    
                                     </div>
                                     
                                     <div class ="col-md-4">
@@ -31,7 +33,7 @@
                                             <img src ="images/vs.png" alt="vs image" title="vs">
                                         </div>
                                         <div class = "button">
-                                            <button type="button" onclick="masterFunc()" style="height: 150px; width: 250px; font-size: 40px; background-color: #802b00;" >Roll !</button>
+                                            <button type="button" id="btn" style="height: 150px; width: 250px; font-size: 40px; background-color: #802b00;" >Roll !</button>
                                         </div>
                                         <h1 id="lose"></h1>
                                         <h1 id="tWin"></h1>
@@ -48,7 +50,22 @@
                                 
                             </div>
                     </div>
+                                                                                        <div class ="container">
+                                                                                            <div class ="row">
+                                                                                                <div class ="col-md-4">
+                                                                                                <h6 id="player"></h6>
+                                                                                                </div>
+                                                                                                    <div class ="col-md-4">
+                                                                                                    </div>
+                                                                                                        <div class ="col-md-4">
+                                                                                                                <h2 id="dragon"></h2>
+                                                                                                        </div>
+                                                                                            </div>
+                                                                                        </div>
 
-            </body>
+
+
             <script src="diceGame.js"></script>
+            </body>
+            
 </html>
