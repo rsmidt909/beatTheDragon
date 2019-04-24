@@ -22,35 +22,37 @@ return roll;
 }
 
 function pickPlayer(){
-    let player;
+    let player = document.getElementById('player');
+    let img;
+    player.innerHTML = '<img src="'+ img + '"/>';
     switch(diceRoll(6)) {
         case 1:
         document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        img = ;
         break;
         case 1:
         document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        img = ;
         break; 
         case 1:
         document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        img = ;
         break; 
         case 1:
         document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        img = ;
         break; 
         case 1:
         document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        img = ;
         break; 
         case 1:
         document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        img = ;
         break;
         default: 0;
         break;}
-        return player;
+        return img;
 }
 
 function pickDragon(){
