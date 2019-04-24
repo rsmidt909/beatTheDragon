@@ -27,27 +27,27 @@ function pickPlayer(){
     player.innerHTML = '<img src="'+ img + '"/>';
     switch(diceRoll(6)) {
         case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
         img = ;
         break;
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        case 2:
+        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
         img = ;
         break; 
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        case 3:
+        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
         img = ;
         break; 
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        case 4:
+        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
         img = ;
         break; 
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        case 5:
+        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
         img = ;
         break; 
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
+        case 6:
+        document.getElementById("playerText").innerHTML ='Toilet plunger + 1';
         img = ;
         break;
         default: 0;
@@ -56,35 +56,37 @@ function pickPlayer(){
 }
 
 function pickDragon(){
-    let player;
+    let dragon = document.getElementById('dragon');
+    let img;
+    dragon.innerHTML = '<img src="'+ img + '"/>';
     switch(diceRoll(6)) {
         case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
+        img = ;
         break;
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        case 2:
+        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
+        img = ;
         break; 
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        case 3:
+        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
+        img = ;
         break; 
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        case 4:
+        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
+        img = ;
         break; 
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        case 5:
+        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
+        img = ;
         break; 
-        case 1:
-        document.getElementById("wep").innerHTML ='Toilet plunger + 1';
-        player = 1;
+        case 6:
+        document.getElementById("dragonText").innerHTML ='Toilet plunger + 1';
+        img = ;
         break;
         default: 0;
         break;}
-        return player;
+        return img;
 }
 
 
